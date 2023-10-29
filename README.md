@@ -14,6 +14,10 @@
 -   icon: Thư mục chứa file CSS và font sử dụng [FontAwesome](https://fontawesome.com)
 -   js: Thư mục chứa file main.js là file chứa toàn bộ code JS cho dự án
 
+## Tải Git
+
+`https://git-scm.com/downloads`
+
 ## Thao tác với GitHub
 
 ### Kéo dự án GitHub về máy
