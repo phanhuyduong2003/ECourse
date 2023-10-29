@@ -14,23 +14,23 @@
 -   icon: Thư mục chứa file CSS và font sử dụng [FontAwesome](https://fontawesome.com)
 -   js: Thư mục chứa file main.js là file chứa toàn bộ code JS cho dự án
 
-## Tải Git
-
-`https://git-scm.com/downloads`
-
 ## Thao tác với GitHub
+
+### Tải Git
+
+[Link tải](https://git-scm.com/downloads)
 
 ### Kéo dự án GitHub về máy
 
-_Mở Terminal (Git Bash), truy cập vào 1 thư mục nào đó, có thể là Download, sau đó gõ lệnh dưới_
+_Mở Git Bash, truy cập vào 1 thư mục nào đó, có thể là Download, sau đó gõ lệnh dưới_
 
 -   `git clone https://github.com/phanhuyduong2003/ECourse.git`
 
-### Đẩy code lên GitHub
+### Đẩy code lên GitHub (Khuyến khích nên đẩy lên GitHub sau mỗi buổi code)
 
-#### (Khuyến khích nên đẩy lên GitHub sau mỗi buổi code)
+**Mở Terminal trên VS Code (Dùng tổ hợp Ctrl + J), lựa chọn Git Bash như ảnh sau: [Link](https://code.visualstudio.com/assets/docs/terminal/basics/select-profile-dropdown.png)**
 
-_Mở Terminal trên VS Code_
+**Sau đó gõ các lệnh dưới đây:**
 
 -   `git pull origin main` (Lấy code mới nhất từ GitHub về phòng trường hợp có người khác sửa vào file của mình dẫn đến hiện tượng gọi là conflict. Nếu bị conflict thì sẽ phải hỏi người sửa code của mình tại sao sửa để xem xét phần code bị conflict nên giữ lại code của mình hay sử dụng code của người khác đã sửa.)
 
