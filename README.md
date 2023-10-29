@@ -12,6 +12,7 @@
 -   bootstrap: Thư mục chứa file CSS và JS của thư viện bootstrap
 -   css: Thư mục chứa file CSS cho toàn bộ dự án
 -   icon: Thư mục chứa file CSS và font sử dụng [FontAwesome](https://fontawesome.com)
+-   image: Thư mục chứa ảnh của dự án, nếu như có nhiều ảnh cho 1 phần nào đó thì tạo thêm 1 thư mục với tên phần cần làm trong thư mục này để chứa các anhhr đó
 -   js: Thư mục chứa file main.js là file chứa toàn bộ code JS cho dự án
 
 ## Thao tác với GitHub
