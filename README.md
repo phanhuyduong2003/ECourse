@@ -41,4 +41,4 @@ _Mở Git Bash, truy cập vào 1 thư mục nào đó, có thể là Download, 
 
 -   `git push origin main` (Đẩy code lên GitHub)
 
--   `Test`
+-   `Test` asad
