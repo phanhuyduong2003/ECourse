@@ -40,3 +40,5 @@ _Mở Git Bash, truy cập vào 1 thư mục nào đó, có thể là Download, 
 -   `git commit -m "message"` (Thay `message` bằng nội dung phần mình đã làm, viết ngắn gọn)
 
 -   `git push origin main` (Đẩy code lên GitHub)
+
+-   `Test`
