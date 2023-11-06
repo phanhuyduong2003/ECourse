@@ -33,6 +33,10 @@ a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    transition: all 0.3s ease;
+}
+a:hover {
+    color: #f0450e;
 }
 button {
     outline: 0;
