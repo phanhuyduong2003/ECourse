@@ -1,0 +1,86 @@
+.course-detail .course-detail--container {
+    display: flex;
+}
+.course-detail .course-detail--main {
+    width: calc(100%/3 * 2);
+    padding: 0 15px;
+}
+.course-detail--main .course-main--info {
+    margin-bottom: 20px;
+    padding: 25px;
+    border: 1px solid #ccc;
+}
+.course-main--info .course-info--title {
+    font-weight: 700;
+    color: #0c2e60;
+}
+.course-main--info .course-info--description {
+    font-weight: 500;
+    color: #0c2e60;
+}
+.course-main--info .course-info--author {
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+.course-info--author a {
+    color: #f98f05;
+}
+.course-main--info .course-info--views {
+    margin-left: 10px;
+}
+.course-main--curriculum .nav-item {
+    width: calc(100%/3);
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.nav-item:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+}
+.nav-item .nav-link {
+    width: 100%;
+    padding: 15px;
+    border-radius: 0;
+    font-size: 18px;
+    background-color: #f7f7f7;
+    color: #000;
+}
+.nav-item .nav-link.active {
+    background: linear-gradient(90deg, #ef3e0f, #ffb800);
+}
+.course-main--curriculum .tab-content {
+    padding: 25px;
+    border: 1px solid #ccc;
+}
+.tab-content .tab-pane--overview .tab-overview--list {
+    padding: 0;
+}
+.tab-overview--list li {
+    width: 48%;
+    display: inline-block;
+}
+.tab-overview--list li span {
+    margin-left: 10px;
+}
+.tab-pane--curriculum {
+    padding: 0;
+}
+.tab-pane--curriculum .tab-curriculum--item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f7f8fa;
+    cursor: pointer;
+}
+.tab-curriculum--item .card {
+    display: block;
+}
+.card .card-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-item span {
+    margin-left: 10px;
+}
+.tab-pane--objective .tab-objective--detail {
+    font-size: 18px;
+}

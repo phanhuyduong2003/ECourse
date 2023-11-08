@@ -33,10 +33,10 @@ _Mở Git Bash, truy cập vào 1 thư mục nào đó, có thể là Download, 
 
 **Sau đó gõ các lệnh dưới đây:**
 
--   `git pull origin main` (Lấy code mới nhất từ GitHub về phòng trường hợp có người khác sửa vào file của mình dẫn đến hiện tượng gọi là conflict. Nếu bị conflict thì sẽ phải hỏi người sửa code của mình tại sao sửa để xem xét phần code bị conflict nên giữ lại code của mình hay sử dụng code của người khác đã sửa.)
-
 -   `git add .` (Thêm tất cả các file trong thư mục dự án để đẩy lên GitHub)
 
 -   `git commit -m "message"` (Thay `message` bằng nội dung phần mình đã làm, viết ngắn gọn)
+
+-   `git pull origin main` (Lấy code mới nhất từ GitHub về phòng trường hợp có người khác sửa vào file của mình dẫn đến hiện tượng gọi là conflict. Nếu bị conflict thì sẽ phải hỏi người sửa code của mình tại sao sửa để xem xét phần code bị conflict nên giữ lại code của mình hay sử dụng code của người khác đã sửa.)
 
 -   `git push origin main` (Đẩy code lên GitHub)
