@@ -1,8 +1,11 @@
 .header {
     width: 100%;
-    position: fixed;
+    height: 80px;
+    position: sticky;
     z-index: 2;
     top: 0;
+    display: flex;
+    align-items: center;
     padding: 20px 0;
     background-color: #fff;
     box-shadow: 0 2px 8px #ccc;
@@ -12,9 +15,6 @@
 }
 .navbar-nav .nav-item--link {
     padding: 15px;
-}
-.content {
-    margin-top: 100px;
 }
 .course-banner {
     width: 100%;
@@ -47,6 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
+    padding: 0;
 }
 .course-item {
     width: calc(100%/3 - 20px);
@@ -71,6 +72,7 @@
     padding: 15px 20px 30px;
 }
 .course-item--info .course-info--title {
+    min-height: 60px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -110,12 +112,17 @@
     color: #ccc;
 }
 .course-list--pagination {
+    display: flex;
     margin: 30px auto;
-    padding-top: 30px;
-    border-top: 1px solid #ccc;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
 }
-.course-list--pagination button {
+.course-list--pagination li {
+    display: flex;
+    align-items: center;
     margin-right: 5px;
+}
+.course-list--pagination li a {
     padding: 7px 15px;
     border: 1px solid #e0e4e6;
     border-radius: 5px;
@@ -124,8 +131,60 @@
 }
 .course-list--pagination a:hover {
     border: 1px solid #f98f05;
+    color: #f98f05;
+}
+.course-list--pagination li button {
+    padding: 7px 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
 }
 .course-list--pagination .current-page {
     border: 1px solid #f98f05;
     color: #f98f05;
+}
+.footer {
+    margin-top: 20px;
+}
+.foo-top {
+    background-color: #f3f3f3;
+    padding: 80px 0;
+}
+
+.footer .widget {
+    margin-bottom: 30px;
+}
+
+.footer .widget .widget-title {
+    margin-bottom: 25px;
+}
+
+.widget .widget-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.widget-navigation li a {
+    color: #999;
+    display: block;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.foo-btm .copyright {
+    color: #83868c;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.foo-btm .copyright a {
+    color: #ef470d;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
 }
