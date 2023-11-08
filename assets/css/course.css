@@ -114,7 +114,8 @@
     padding-top: 30px;
     border-top: 1px solid #ccc;
 }
-.course-list--pagination a {
+.course-list--pagination button {
+    margin-right: 5px;
     padding: 7px 15px;
     border: 1px solid #e0e4e6;
     border-radius: 5px;
