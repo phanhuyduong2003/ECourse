@@ -1,9 +1,15 @@
+.course-detail {
+    padding: 80px;
+}
 .course-detail .course-detail--container {
     display: flex;
 }
 .course-detail .course-detail--main {
     width: calc(100%/3 * 2);
     padding: 0 15px;
+}
+.course-detail--main .course-main--image img {
+    width: 100%;
 }
 .course-detail--main .course-main--info {
     margin-bottom: 20px;
@@ -83,4 +89,85 @@
 }
 .tab-pane--objective .tab-objective--detail {
     font-size: 18px;
+}
+.course-detail--side .course-side--author {
+    padding: 25px;
+    border: 1px solid #ccc;
+}
+.course-side--author .course-author--avt {
+    display: flex;
+    justify-content: center;
+}
+.course-author--avt .img-avt {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.course-side--author .course-author--name {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+.course-side--author .course-author--work {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+.course-side--author .course-author--social {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-left: 0;
+}
+.course-author--social li {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.course-detail--side .course-side--buy {
+    position: sticky;
+    top: 100px;
+    margin-top: 20px;
+    padding: 25px;
+    border: 1px solid #ccc;
+}
+.course-side--buy .course-buy--price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-buy--price .course-price--old {
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+.course-buy--time {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.course-buy--addcart {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 40px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0.8;
+    transition: all 0.3s ease;
+}
+.course-buy--addcart:hover {
+    color: #0c2e60;
+}
+.course-buy--buynow {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0.8;
+    background: linear-gradient(90deg, #ef3e0f, #ffb800);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.course-buy--buynow:hover {
+    color: #0c2e60;
 }

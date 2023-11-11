@@ -1,6 +1,17 @@
 <?php
 include_once './backend/db_conn.php';
-
+session_start();
+$isSignIn = 0;
+if (isset($_SESSION['signin'])) {
+    if ($_SESSION['signin'] == 1) {
+        $isSignIn = 1;
+    }
+}
+if (isset($_SESSION['user_id'])) {
+    $user_id = $_SESSION['user_id'];
+    $sql = "SELECT * FROM users WHERE id = $user_id";
+    $result_user = mysqli_query($conn, $sql);
+}
 $sql_course = 'SELECT * FROM courses';
 $result_course = mysqli_query($conn, $sql_course);
 $num_course = mysqli_num_rows($result_course);
@@ -53,11 +64,19 @@ if (!$result) {
                         <li class="nav-item">
                             <a href="contact" class="nav-item--link">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="signin" class="nav-item--link">Sign in</a>
-                            <span>/</span>
-                            <a href="signup" class="nav-item--link">Sign up</a>
-                        </li>
+                        <?php if ($isSignIn == 1 || isset($user_id)) { ?>
+                            <li class="nav-item">
+                                <a href="#" class="nav-item--link">Hello, <?php echo mysqli_fetch_assoc($result_user)['name'] ?></a>
+                                <span>/</span>
+                                <a href="backend/auth/signout" class="nav-item--link">Sign out</a>
+                            </li>
+                        <?php } else { ?>
+                            <li class="nav-item">
+                                <a href="signin" class="nav-item--link">Sign in</a>
+                                <span>/</span>
+                                <a href="signup" class="nav-item--link">Sign up</a>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
@@ -76,10 +95,10 @@ if (!$result) {
                 <?php foreach ($result as $course) { ?>
                     <li class="course-item">
                         <div class="course-item--image">
-                            <img src="#" alt="" class="img-course" />
+                            <img src=".<?php echo $course['image'] ?>" alt="" class="img-course" />
                         </div>
                         <div class="course-item--info">
-                            <a href="#" class="course-info--title">
+                            <a href="detail?id=<?php echo $course['id'] ?>" class="course-info--title">
                                 <?php echo $course['name'] ?>
                             </a>
                             <p class="course-info--description">
@@ -101,13 +120,18 @@ if (!$result) {
                 <?php } ?>
             </ul>
             <ul class="course-list--pagination container">
+                <?php if ($page > 1) { ?>
+                    <li><a href="?page=<?php echo $page - 1 ?>" class="control-button">Previous</a></li>
+                <?php } else { ?>
+                    <li><button class="block-button">Previous</button></li>
+                <?php } ?>
                 <?php for ($i = 1; $i <= $total_page; $i++) { ?>
                     <li><a href="?page=<?php echo $i ?>" <?php echo ($i == $page) ? 'class="current-page"' : ''; ?>><?php echo $i ?></a></li>
                 <?php } ?>
                 <?php if ($page < $total_page) { ?>
-                    <li><a href="?page=<?php echo $page + 1 ?>">Next</a></li>
+                    <li><a href="?page=<?php echo $page + 1 ?>" class="control-button">Next</a></li>
                 <?php } else { ?>
-                    <li><button>Next</button></li>
+                    <li><button class="block-button">Next</button></li>
                 <?php } ?>
             </ul>
         </div>
