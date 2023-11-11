@@ -74,32 +74,19 @@ if (isset($_SESSION['user_id'])) {
                 <div class="col-sm-6">
                     <div class="entry-content">
                         <h3>
-                            Perspiciatis unde omnis iste natus error
-                            inventore.
+                            What is ECourse?
                         </h3>
                         <p>
-                            Perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium,
-                            totam rem aperiam, eaque ipsa quae ab illo
-                            inventore veritatis et quasi architecto beatae
-                            vitae dicta sunt explicabo.
+                            ECourse is a learning management system providing a platform for e-learning and it helps the various educators considerably in conceptualizing the various courses, course structures and curriculum thus facilitating interaction with online students.
                         </p>
                         <h6>
-                            Dolor sit amet consectetur adipisicing elit.
-                            Unde, quasi.
+                            Pedagogical approach
                         </h6>
                         <p>
-                            Nemo dolores, iusto pariatur corporis quis ullam
-                            harum voluptate porro officiis aliquam quas
-                            explicabo?
+                            The stated philosophy of Ecourse includes a constructivist and social constructionist approach to education, emphasizing that learners (and not just teachers) can contribute to the educational experience. Using these pedagogical principles, Ecourse provides an environment for learning communities.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Alias similique, consequuntur
-                            incidunt at repellendus ratione totam excepturi
-                            iste. Similique ipsum numquam recusandae,
-                            eligendi maiores temporibus officia harum labore
-                            deleniti quasi.
+                            Monitor your learners with completion tracking and personalised learning plans, built from competency frameworks and learning objectives.
                         </p>
                     </div>
                 </div>
