@@ -70,7 +70,7 @@ if (isset($_SESSION['user_id'])) {
             </h3>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row" style="align-items: center;">
                 <div class="col-sm-6">
                     <div class="entry-content">
                         <h3>
@@ -104,7 +104,7 @@ if (isset($_SESSION['user_id'])) {
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="video-box"></div>
+                    <div class="video-box"><img src="assets/image/about/video-bg.bee56b7d.jpg" alt=""></div>
                 </div>
             </div>
         </div>
