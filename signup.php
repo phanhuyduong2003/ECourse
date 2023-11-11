@@ -97,7 +97,7 @@ if (isset($_SESSION['error_signup'])) {
                     <?php } ?>
                     <button type="submit" class="btn">Signup</button>
                     <div class="login-register">
-                        <p>Already have an account? <a href="./signin.html" class="Login-link">Login</a></p>
+                        <p>Already have an account? <a href="signin" class="Login-link">Login</a></p>
                     </div>
                 </form>
             </div>
