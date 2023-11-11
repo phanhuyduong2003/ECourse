@@ -55,7 +55,7 @@
     margin: 40px 0 20px;
 }
 .certification .sec-heading h3{
-    margin-top: 150px;
+    margin-top: 60px;
 }
 .certification .carousel-inner img{
     display: block;
@@ -67,6 +67,12 @@
     padding: 70px 0;
     width: 100%;
     display: block;
+}
+.video-box img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
 }
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
